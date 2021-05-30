@@ -1,4 +1,2 @@
-window.addEventListener('DOMContentLoaded', function(){
-("#comments_area").html("<%= j(render 'comments/index', { comments: @comment.post.comments, post: @comment.post }) %>")});
-window.addEventListener('DOMContentLoaded', function(){("textarea").val('')});
-window.addEventListener('DOMContentLoaded', function(){('#error_explanation').remove()});
+$(".materialize-textarea").html("<%= j(render 'index', { comments: @comment.post.comments }) %>")
+$("textarea").val('')
